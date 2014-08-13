@@ -9,6 +9,8 @@ import scalax.file.Path
 import play.api.libs.json.Json
 import play.api.mvc.Action
 import play.api.mvc.Results
+import play.api.libs.json.JsArray
+import play.api.libs.json.JsString
 
 object TranslateFiles extends Controller {
 
@@ -67,6 +69,31 @@ object TranslateFiles extends Controller {
 
   def index = Action {
     Ok(views.html.translate())
+  }
+
+  def dump = DBAction { implicit rs =>
+    val l = tblQuery.sortBy(_.id).list()
+    Ok(Json.obj("dump" -> Json.toJson(l)))
+  }
+
+  def batchImport = DBAction(parse.json(maxLength = 1024 * 1024)) { implicit rs =>
+    println("batch import working")
+    Ok("batch import done")
+
+    (rs.body \ "dump").asOpt[List[TranslateFile]] map { list =>
+
+      println("list size: " + list.size)
+      tblQuery.delete
+
+      list.foreach { f =>
+
+        tblQuery.insert(f)
+      }
+
+      Ok("done import")
+
+    } getOrElse (BadRequest("invalid json"))
+
   }
 
 }
