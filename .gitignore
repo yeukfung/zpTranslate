@@ -13,7 +13,7 @@ dump
 bin
  
 # SBT
-dist
+#dist
 project/boot
 project/target
 project/plugins/target
