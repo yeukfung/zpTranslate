@@ -1,0 +1,94 @@
+@()
+
+@main("Translate Page") {
+	
+	<div ng-app="app">
+	
+	
+	 <div ng-controller="TranslateCtrl">
+	
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+  
+ <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><button type="button" class="btn btn-default btn-sm" ng-click="batchMarkRequired('required')">
+  Batch Mark Required
+</button>
+</li>
+        <li><button type="button" class="btn btn-default btn-sm" ng-click="batchMarkRequired('notRequired')">
+  Batch Mark NotRequired
+</button>
+</li>
+
+    </div><!-- /.navbar-collapse -->  
+  
+  </div>
+</nav>
+	
+	
+	<div class="col-sm-12">
+	  <h2>Translations</h2>
+	</div>
+
+<div class="col-sm-12">
+<pre>{{radioModel || 'null'}}</pre>
+    <div class="btn-group">
+        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'required'">Required</label>
+        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'notVerified'">Required & Not Verified</label>
+        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'verified'">Required & Verified</label>
+        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'notRequired'">Not Required</label>
+        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'deleted'">Deleted</label>
+        <label class="btn btn-primary" ng-model="radioModel" btn-radio="'all'">All</label>
+    </div>
+</div>
+
+<div class="col-sm-12">
+<br/>
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th style="width:32px;"></th>
+      
+      <th style="width:100px;"></th>
+      <th style="width:280px;"></th>
+      <th>src image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="f in files" ng-click="f.selected = !f.selected" ng-class="{selected:f.selected}" ng-show="radioModel == 'deleted' || !f.deleted">
+      <td>{{f.id}} <br/>
+      <span ng-show="f.showNotRequired" class="glyphicon glyphicon-eye-close"></span></td>
+      <td>
+      <button type="button" class="btn btn-default btn-sm" ng-click="markDelete(f, true)" ng-show="!f.deleted">
+	  <span class="glyphicon glyphicon-trash"></span>
+      <button type="button" class="btn btn-default btn-sm" ng-click="markDelete(f, false)" ng-show="f.deleted">
+	  <span class="glyphicon glyphicon-export"></span>
+	  
+	  
+	  
+	  
+</button>
+
+</td>
+<td><textarea rows="2" cols="45" ng-model="f.translatedText" ng-blur="updateText(f)"></textarea><br/>
+<span ng-show="f.saving">Saving...</span>
+<span ng-show="f.showSaved" class="glyphicon glyphicon-floppy-saved"></span>
+</td>
+      <td>
+      <img ng-src="{{f.inPath}}"/><br/>
+      {{f.inPath}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</div>
+</div>
+
+
+<script src="@routes.Assets.at("javascripts/app.js")" type="text/javascript"></script>    
+}
