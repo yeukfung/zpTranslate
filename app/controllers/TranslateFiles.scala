@@ -21,6 +21,7 @@ object TranslateFiles extends Controller {
 
   val inPath = "public/data/in"
   val assetPath = "assets/data/in"
+  val outAssetPath = "assets/data/out"
   def init = DBAction { implicit rs =>
     tblQuery.delete(rs.dbSession)
     val allFiles = Path.fromString(inPath).descendants().filter(p => p.isFile)
@@ -51,7 +52,9 @@ object TranslateFiles extends Controller {
       case _ => tblQuery.filter(_.isRequired).filter(!_.deleted)
     }
 
-    val l = q.list()
+    val l = q.list().map { f =>
+      f.copy(outPath = Some(f.inPath.replace(assetPath, outAssetPath)))
+    }
     Ok(Json.toJson(l))
   }
 
