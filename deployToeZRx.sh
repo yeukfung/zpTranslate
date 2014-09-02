@@ -1,0 +1,1 @@
+rsync -r ./public/data/out/* ~/git/zpsrc/eZRx

@@ -1,0 +1,177 @@
+	body {  font-family: "Arial", "Verdana","Helvetica","돋움";color: #383838; font-size: 12px; text-decoration: none;  line-height: 140%;
+        scrollbar-face-color:#EAEAEA;
+ 	    scrollbar-highlight-color: #D8D8D8;
+ 	    scrollbar-shadow-color: #D8D8D8;
+ 	    scrollbar-3dlight-color: #F5F5F5;
+ 	    scrollbar-darkshadow-color: #F5F5F5;
+ 	    scrollbar-track-color: #F5F5F5;
+ 	    scrollbar-arrow-color: #0072BC;}
+
+	img{border:0px;}
+	font { font-size:12px; color:#666666}
+  	td { font-size:12px; color:#666666}
+  	form {font-size:12px; color:#666666}
+  	select {font-size:12px; color:#666666}
+	A:link{text-decoration:none ; color:#5F5F5F}
+	A:visited{text-decoration:none ; color:#5F5F5F}
+	A:hover{text-decoration:underline; color:#3065c1}
+	
+	input
+	{font-size:12px; color:#666666; border:1px solid #D2D2C8;}
+	textarea
+	{font-size:12px; border:1px solid #ADADAD; }
+	input.blue
+	{font-size:12px; color:#666666; border:1px solid #0C78C0;}
+	input.border0
+	{font-size:12px; color:#666666; border:0px solid #D2D2C8;}
+
+	
+<!--normal-->	
+	A.normal {}
+	A.normal:link{color:#666666;}       
+	A.normal:visited{color:#666666;}    
+	A.normal:hover{color:#666666; text-decoration:none}
+	
+<!--tab-->	
+	A.tab {}
+	A.tab:link{color:#666666; font-size:11px;}       
+	A.tab:visited{color:#ffffff; font-size:11px;}    
+	A.tab:hover{color:#ffffff; text-decoration:none; font-size:11px;}	
+	
+<!--bottom-->	
+	A.bottom {}
+	A.bottom:link{color:#777777;}       
+	A.bottom:visited{color:#777777;}    
+	A.bottom:hover{color:#1f5382; text-decoration:none}
+		
+<!--BLUE2-->	
+	A.blue2 {}
+	A.blue2:link{color:#666666; }       
+	A.blue2:visited{color:#666666; }    
+	A.blue2:hover{color: #3366FF; text-decoration:none; font-weight:bold; }	
+
+<!--white3-->	
+	A.white3 {}
+	A.white3:link{color:#ffffff; }       
+	A.white3:visited{color:#ffffff; }    
+	A.white3:hover{color:#ffffff; text-decoration: underline;}	
+
+
+<!--color  -->
+	.gray{ color:#7C848F; font-weight:normal}
+	.green{color: #009900;}
+	.tab{ color:#999999; font-size:11px;}
+	.blue{color: #0c6eb3;}
+	.navy{color: #053e83;}
+	.orange{color: #fc510f}
+	.gray{ color:#555555; font-weight:bold;}
+	.gray2{ color:#555555; font-weight:bold; font-size:14px;}
+	.green_bold2 {color: #009900;font-weight: bold; font-size:14px;}
+	.green_bold {color: #009900;font-weight: bold;}
+	.blue_bold {color: #0c6eb3;font-weight: bold;}
+	.navy_bold2{color: #053e83;font-weight: bold; font-size:14px;}
+	.navy_bold{color: #053e83;font-weight: bold;}
+	.orange_bold{color: #fc510f;font-weight: bold;}
+
+	.orangeB {color: #FB8501;font-weight: bold; //금액 오렌지색}
+	.red1 {color: #742924; //적갈색}
+	.green1 {color: #0A8F8A;font-weight: bold; //녹색_타이틀}
+	.greenbg {background-color:#E3FBFB; //연녹색 bg}
+	.blue1{color:#0091C0;}
+	.blue2{color:#053E83; //리스트 청색}
+	.white{color:#ffffff;}
+	.white_bold{color:#ffffff;font-weight:bold;}
+	.white2{color:#ffffff;font-weight:bold; font-size:14px;}
+	.khaki{color:#707231;}
+	.yellow{color:#888C04;}
+	.brown{color:#8e5417;}
+	.brown_bold{color:#603913; font-weight:bold;}
+
+
+
+
+
+input{ font-size:12px; color:#666666; border:1px solid #D2D2C8;}
+input.border0{ font-size:12px; color:#666666; border:0px solid #D2D2C8;}
+input.graybg{ font-size:12px; color:#666666; border:1px solid #D2D2C8; background-color:#ECEBE9;}
+
+
+
+.form1 {border: 1px #B6B6B6 solid; height:21px; background-color:#F6F9FA; color:#666666; font-size:12px; text-align:left; text-valign: middle; text-indent: 2pt;}
+
+
+/*select 태그 관련*/
+select {border: 1px #B6B6B6 solid; height:21; background-color:#F6F9FA; color:#666666; font-size:12px; text-align:left; text-valign: middle; text-indent: 2pt;}
+select.graybg{ font-size:12px; color:#666666; border:1px solid #D2D2C8; background-color:#ECEBE9;}
+select.bluebg{ font-size:12px; color:#666666; border:1px solid #7F9FB8; background-color:#F5F9FA;}
+select.ddlList01 {color:#333333;font-size:10pt;font-family:verdana, 굴림;border:solid 1px #6096DD; background:#FFFFFF;width:100px;height:17px;clip:rect(2,98,15,2);}
+select.admin{border: 1px #d2d2c8 solid; height:19px; background-color:#ffffff; color:#666666; font-size:12px; text-align:left; text-valign: middle; text-indent: 2pt;}				 
+
+
+/* ---------------Combo Box--------------- */
+.comboTable {  background: #999999; margin: 0px 0px; padding: 0px 0px; width: 100%; border: 0px;}
+.comboTR {  background: #FFFFFF}
+.comboTDOut {  background: #FFFFFF;	padding:0 3 0 3;	font-family: "돋움"; font-size: 12px;}
+.comboTDOver {  background: #E2E2E2;	padding:0 3 0 3;	font-family: "돋움"; font-size: 12px;}
+.comboTitle {  background: #5BDEFF; text-align: center; font-weight: bold; color:#FFFFFF}
+
+.button { border:bold 1x solid #666666; background-Color:#dcdcdc; font:12px tahoma; color:#666666;} 
+
+
+.board_line {border-bottom:1px #DEDEDE solid;}
+.board_dashed{border-bottom:1px #dedede dashed;}
+.padding_down {padding-bottom:7px;}
+.indent{ text-indent:10px}
+.indent_bg_select{text-indent:20px}
+.justify{text-align:justify; text-justify:distribute-all-lines;}
+.line-height{line-height:1.8;}
+.imgline{border:1px solid white;}
+.pointer{cursor:pointer;}
+
+.sub_maker {background-image:url(/image/sub/maker/shop_bg_a.gif); background-repeat:no-repeat; width:109px; height:54px; text-align:center;}
+.main_maker {background-image:url(/image/sub/maker/main_bg_a.gif); background-repeat:no-repeat; width:120px; height:55px; text-align:center;}
+.login_maker {background-image:url(/image/sub/login/bg_maker.gif); background-repeat:no-repeat; width:80px; height:39px; text-align:center;}
+
+.board_tab{ width:92px; height:25px; display:inline-table; text-align:center;  vertical-align:bottom; cursor:pointer; padding:5px 0 -5px 0;}
+
+ .button1, .button1 a{ position:relative; margin-bottom:1px; display:inline-block; text-decoration:none !important; border:0; height:23px; font-size:12px; line-height:23px; background:url(/image/sub/button/button_bg.gif) no-repeat; vertical-align:middle;}
+ .button1 { padding:0; margin-right:2px; background-position:left top; }
+ .button1 a { left:2px; overflow:visible; padding:0 10px 0 8px; background-position:right top; cursor:pointer; _vertical-align:top; } 
+
+/* 자동결제 페이지 */
+.billpay_table {text-align:center;}
+.billpay_table .btn {text-align:center; cursor:pointer}
+.billpay_table th { width:100px; text-align:left; padding-left:10px; font-weight:normal; background:#edf2f5}
+.billpay_table td { width:190px; text-align:left; padding-left:10px; background:#ffffff; position:relative} 
+.billpay_table td .more { position:absolute; right:7px; top:6px; cursor:pointer} 
+
+/* 자동결제 완료 페이지 */
+.billpay_fin {text-align:center;}
+.billpay_fin h3 {font-size:24px; text-align:center}
+.billpay_fin .notice {line-height:2.5; color:#777; padding-bottom:20px;}
+.billpay_fin .name {color:#009900; font-weight:bold;}
+.billpay_fin .date {color:#16476d; font-weight:bold;}
+.billpay_fin .customer {text-align:right; padding-right:10px; color:#d32a03}
+
+
+/* 자동결제 카드관리 페이지 */
+.card_more {width:600px; margin:20px auto;}
+.card_more h3 { font-size:14px; text-align:left; margin:0 10px 5px ; padding:0}    
+.card_more thead {background:url(/image/sub/mypage/billpay_bg_title.gif) repeat-x; height:34px;}
+.card_more th {color:#fff; height:34px; padding:0 30px;}
+.card_more td {height:30px; border-bottom:dashed 1px #ccc;}
+.card_more td input {border:0}
+.card_more .btn {width:600px; margin-top:5px; padding:0; position:relative}
+.card_more .close { position:absolute; right:3px;}
+
+/* 자동결제 내역 페이지 */
+.record_more {width:620px; margin:20px auto;}
+.record_more h3 { font-size:14px; text-align:left; margin:0 10px 5px ; padding:0}    
+.record_more .count { margin:0; padding:10px 0 3px 25px; text-align:left; position:relative} 
+.record_more .count .calender {position:absolute; right:20px;top:10px;}   
+.record_more .bar_l {background:url(/image/sub/board/bg_billpay_bar.gif) no-repeat left; font-weight:normal}
+.record_more .bar_m {background:url(/image/sub/board/bg_billpay_bar.gif) no-repeat center; font-weight:normal}
+.record_more .bar_r {background:url(/image/sub/board/bg_billpay_bar.gif) no-repeat right; padding-right:20px; font-weight:normal}
+.record_more tfoot td {border-top:2px solid #000; border-bottom:2px solid #f7650f;}
+.record_more .btn {width:620px; margin-top:5px; padding:0; position:relative}
+.record_more .close { position:absolute; right:9px;}

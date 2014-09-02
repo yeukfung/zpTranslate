@@ -1,0 +1,138 @@
+	#mainHead
+    {
+        /*border:1px solid red;*/
+        position    : relative;
+        left        : 0px;
+        width       : 1060px;
+        height      : 140px;
+        margin      : 0 auto;
+        Z-INDEX     : 1; 
+        
+    }
+
+    #mainTopMenu
+    {
+        /*border:1px solid red;*/
+        width           : 1060px;        
+        margin          : 0 auto;
+        padding-top     : 2px;
+        
+    }  
+    
+    .quicktop 
+    {
+         POSITION:relative; 
+         
+         Z-INDEX:4; 
+                
+    }
+    .leftMenu
+    {
+        height : 28px;
+        text-align : left ;
+        
+    }
+    .mainLeftMenu
+    {
+        
+       height : 33px;
+       text-align : center ;
+       border-right:1px #cccccc solid; 
+        
+    }
+     .makerLeftMenu
+    {
+        
+       width :180px;
+       text-align : center ;
+       padding-bottom:4px;
+       
+       border-right:1px #cccccc solid; 
+        
+    }
+      .makerMain
+    {
+        
+      
+       text-align : center ;
+       padding-bottom:4px;
+       padding-left: 8px
+      
+        
+    }
+    #subContens
+    {
+        /*border:1px solid red;*/      
+        width           : 1060px;        
+        margin          : 0 auto;
+        padding-top     : 2px;
+       
+    }    
+    #mainBlank
+    {
+        /*border:1px solid red;*/ 
+        width        : 440px;        
+        height       : 18px;
+       
+    }  
+    #mainContens
+    {
+        /*border:1px solid red;*/
+        
+        width : 1060px;
+        vertical-align: middle;
+        left : 0px;
+        margin:0 auto;
+    
+    }
+
+    #footer
+    {
+        /*border:1px solid red;*/    
+       
+        width : 1060px;  
+        margin:0 auto;
+    
+    }
+    
+   				
+    #preViewTheme  
+    {
+        POSITION: absolute; 
+        Z-INDEX: 1000;   
+    }	
+    #ifrmView
+    {
+         margin:0 auto; 
+       
+        
+    }
+    #preViewOverlay  
+    {
+       
+        background-color:gray;     
+        Z-INDEX: 100;             
+        WIDTH: 100%;               
+        POSITION:absolute; 
+        top : 0px;  
+        left: 0px;     
+        HEIGHT:  100%; 
+        margin:0 auto;
+        filter:alpha(opacity=30); 
+        opacity:0.3; 
+        -moz-opacity:0.3;
+        
+    }	
+
+   
+	/* 모달 DIV 관현 CSS 끝 */	
+	
+
+
+
+
+
+
+
+
+
